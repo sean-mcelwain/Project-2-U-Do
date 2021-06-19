@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<title>U-2</title>
+<!-- Bootstrap files -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- Style file -->
+<link rel="stylesheet" href="CSS/style.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="container containerNav mt-4">
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- when click on a <a> tag it refreshes the page and stops that-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        
+        <li class="nav-item active">
+          <a class="nav-link" href="javascript:void(0);" id="yourListBtn">Your list</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0);" id="newListBtn">New list</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Log out</a>
+        </li>
+        
+      </ul>
+    </div>
+    </nav>
+</div>
+
+
+<!-- Lists Container -->
+<div class="container mainCon mt-5 hideCons" id="yourList">
+
+    <!-- Lists -->
+    <div class="row listItem">
+        <div class="col-8">List - 1</div> <!--List Name-->
+        <div class="col-4 text-right"><button class="viewBtn btn btn-success">View</button></div>
+    </div>
+    <div class="row listItem">
+        <div class="col-8">List - 2</div> <!--List Name-->
+        <div class="col-4 text-right"><button class="viewBtn btn btn-success">View</button></div>
+    </div>
+    <div class="row listItem">
+        <div class="col-8">List - 3</div> <!--List Name-->
+        <div class="col-4 text-right"><button class="viewBtn btn btn-success">View</button></div>
+    </div>
+</div>
+
+
+<!-- New Lists Container -->
+<div class="hide hideCons container mainCon mt-5" id="newList">
+
+  <form action="#" method="post">
+      <h2 class="text-left my-4">Add new list</h2>   
+      <div class="form-group">
+          <!-- Title box -->
+        <input type="text" class="form-control" name="title" placeholder="Title" required="required">
+      </div>  
+
+      <div class="form-group">
+          <!-- List box -->
+        <textarea type="text" class="form-control" name="list" rows="11" placeholder="TO-DO List" required="required"></textarea>
+      </div>    
+          <!-- Save boutton box -->
+      <div class="form-group">
+          <button type="submit" name="saveList" class="btn btn-success btn-lg btn-block">Save</button>
+      </div>
+  </form>
+</div>
+
+
+
+<!-- Edit Lists Container -->
+<div class="hide hideCons" id="editList">
+<div class="container mainCon mainCon2 mt-5">
+
+  <form action="#" method="post">
+      <h2 class="text-left my-4">Edit TO-DO List - List Title Here</h2>   
+      <div class="form-group">
+          <!-- Title Textbox -->
+        <input type="text" class="form-control" name="title" placeholder="Title" value="List 1 Title" required="required">
+      </div>    
+      <div class="form-group">
+          <!-- List Textbox -->
+        <textarea type="text" class="form-control" name="list" rows="7" placeholder="TO-DO List" required="required">
+          go to grocery
+          buy tomatoes
+        
+          </textarea>
+      </div>    
+
+
+      <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <button type="submit" name="saveList" class="btn btn-success btn-lg btn-block">Save</button>
+              </div>
+          </div>
+
+          <div class="col-md-6">
+              <div class="form-group">
+                  <button type="submit" name="deleteList" class="btn btn-danger btn-lg btn-block">Delete</button>
+              </div>
+          </div>
+      </div>
+      
+  </form>
+</div>
+
+
+
+<div class="container mainCon mainCon2 mt-2 mb-5">
+
+
+  <!-- It submits the entered data to the current page. If you put another page link for the # it will submit the form data to that page-->
+  <form action="#" method="post">
+
+      <h2 class="text-left my-4">Add users</h2>   
+      <div class="form-group">
+          <!-- User Email Textbox -->
+        <input type="email" class="form-control" name="userEmail" placeholder="User Email" required="required">
+      </div>  
+
+      <div class="form-group">
+          <button type="submit" name="addUser" class="btn btn-primary btn-lg btn-block">Add</button>
+      </div>
+
+
+  </form>
+  <h2 class="text-left my-4">Added users</h2>  
+  <p>User1@gmail.com <button class="btn btn-danger">Remove</button></p>
+  <p>User2@gmail.com <button class="btn btn-danger">Remove</button></p>
+  <p>User3@gmail.com <button class="btn btn-danger">Remove</button></p>
+  <p>User4@gmail.com <button class="btn btn-danger">Remove</button></p>
+</div>
+</div>
+
+
+
+<script src="JS/script.js" charset="utf-8"></script>
+
+
+</body>
+</html>

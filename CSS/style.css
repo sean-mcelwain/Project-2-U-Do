@@ -22,13 +22,12 @@ body {
 .cone h2 {
 	margin: 10px 0 25px;
 }
-.cone form {
+.cone .pack {
 	color: #868686;
 	border-radius: 4px;
 	margin-bottom: 12px;
 	background: #ffff;
 	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-	padding: 31px;
     border-radius: 21px;
 }
 .cone .btn {        
@@ -48,25 +47,25 @@ body {
 .cone a:hover {
 	text-decoration: none;
 }
-.cone form a {
+.cone .pack a {
 	color: #696969;
 	text-decoration: none;
 }
-.cone form a:hover {
+.cone .pack a:hover {
 	text-decoration: underline;
 }
 .enre {
 	width: 400px;
 	margin: 30px auto;
 }
-.enre form {
+.enre .pack {
 	color: #7a7a7a;
 	border-radius: 4px;
 	margin-bottom: 16px;
-	background: #ffff;
+	background: transparent;
 	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-	padding: 31px;
-    border-radius: 21px;
+	padding: 5px;
+    border-radius: 4px;
 }
 .enre h2  {
 	
@@ -82,10 +81,10 @@ body {
 	margin-top: 4px;
 }
 .enre .row div:first-child {
-	padding-right: 11px;
+	padding-right: 9px;
 }
 .enre .row div:last-child {
-	padding-left: 11px;
+	padding-left: 9px;
 }
 .enre .btn {        
 	font-size: 16px;
@@ -93,6 +92,9 @@ body {
 	background: #3395d6;
 	border: none;
 	min-width: 140px;
+
+	
+	
 }
 .enre .btn:hover, .enre .btn:focus {
 	background: #2796e0;
@@ -105,11 +107,11 @@ body {
 .enre a:hover {
 	text-decoration: none;
 }
-.enre form a {
+.enre .pack a {
 	color: #3598dc;
 	text-decoration: none;
 }	
-.enre form a:hover {
+.enre .pack a:hover {
 	text-decoration: underline;
 }
 .enre .hint-text  {

@@ -30,15 +30,15 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto">
         
-        <li class="nav-item active">
+        <li class="list active">
           <a class="nav-link" href="javascript:void(0);" id="yourListBtn">Your list</a>
         </li>
 
-        <li class="nav-item">
+        <li class="list">
           <a class="nav-link" href="javascript:void(0);" id="newListBtn">New list</a>
         </li>
 
-        <li class="nav-item">
+        <li class="list">
           <a class="nav-link" href="login.html">Log out</a>
         </li>
         
@@ -51,41 +51,50 @@
 <!-- Lists Container -->
 <div class="container mainCon mt-5 hideCons" id="yourList">
 
+
     <!-- Lists -->
     <div class="row listItem">
         <div class="col-8">List - 1</div> <!--List Name-->
         <div class="col-4 text-right"><button class="viewBtn btn btn-success">View</button></div>
     </div>
+
     <div class="row listItem">
         <div class="col-8">List - 2</div> <!--List Name-->
         <div class="col-4 text-right"><button class="viewBtn btn btn-success">View</button></div>
     </div>
+
     <div class="row listItem">
         <div class="col-8">List - 3</div> <!--List Name-->
         <div class="col-4 text-right"><button class="viewBtn btn btn-success">View</button></div>
     </div>
+
+
 </div>
 
 
 <!-- New Lists Container -->
 <div class="hide hideCons container mainCon mt-5" id="newList">
 
+
   <form action="#" method="post">
       <h2 class="text-left my-4">Add new list</h2>   
-      <div class="form-group">
+      <div class="pack">
           <!-- Title box -->
         <input type="text" class="form-control" name="title" placeholder="Title" required="required">
       </div>  
 
-      <div class="form-group">
+      <div class="pack">
           <!-- List box -->
-        <textarea type="text" class="form-control" name="list" rows="11" placeholder="TO-DO List" required="required"></textarea>
-      </div>    
+        <textarea type="text" class="form-control" name="list" rows="11" placeholder="U-DO List" required="required"></textarea>
+      </div>   
+
           <!-- Save boutton box -->
-      <div class="form-group">
+      <div class="pack">
           <button type="submit" name="saveList" class="btn btn-success btn-lg btn-block">Save</button>
       </div>
   </form>
+
+
 </div>
 
 
@@ -95,30 +104,31 @@
 <div class="container mainCon mainCon2 mt-5">
 
   <form action="#" method="post">
-      <h2 class="text-left my-4">Edit TO-DO List - List Title Here</h2>   
-      <div class="form-group">
+      <h2 class="text-left my-4">U-DO List</h2>   
+      <div class="pack">
           <!-- Title Textbox -->
         <input type="text" class="form-control" name="title" placeholder="Title" value="List 1 Title" required="required">
       </div>    
-      <div class="form-group">
+      
+      <div class="pack">
           <!-- List Textbox -->
-        <textarea type="text" class="form-control" name="list" rows="7" placeholder="TO-DO List" required="required">
-          go to grocery
-          buy tomatoes
+        <textarea type="text" class="form-control" name="list" rows="7" placeholder="U-DO List" required="required">
+        go to grocery: buy tomatoes
+        finfish homework
         
-          </textarea>
+        </textarea>
       </div>    
 
 
       <div class="row">
           <div class="col-md-6">
-              <div class="form-group">
+              <div class="pack">
                   <button type="submit" name="saveList" class="btn btn-success btn-lg btn-block">Save</button>
               </div>
           </div>
 
           <div class="col-md-6">
-              <div class="form-group">
+              <div class="pack">
                   <button type="submit" name="deleteList" class="btn btn-danger btn-lg btn-block">Delete</button>
               </div>
           </div>
@@ -136,22 +146,46 @@
   <form action="#" method="post">
 
       <h2 class="text-left my-4">Add users</h2>   
-      <div class="form-group">
+      <div class="pack">
           <!-- User Email Textbox -->
-        <input type="email" class="form-control" name="userEmail" placeholder="User Email" required="required">
+        <input type="email" class="form-control" name="userEmail" placeholder="Email / Phone number" required="required">
       </div>  
 
-      <div class="form-group">
+      <div class="pack">
           <button type="submit" name="addUser" class="btn btn-primary btn-lg btn-block">Add</button>
       </div>
 
 
   </form>
   <h2 class="text-left my-4">Added users</h2>  
-  <p>User1@gmail.com <button class="btn btn-danger">Remove</button></p>
-  <p>User2@gmail.com <button class="btn btn-danger">Remove</button></p>
-  <p>User3@gmail.com <button class="btn btn-danger">Remove</button></p>
-  <p>User4@gmail.com <button class="btn btn-danger">Remove</button></p>
+  <div class="row">
+    <div class="col-md-6">
+      <p><span class="userEmail">User1 </span><button class="btn btn-danger">Remove</button><button class="btn btn-primary ml-2 sendTextBtn">Send Text</button></p>
+      <p><span class="userEmail">User2 </span><button class="btn btn-danger">Remove</button><button class="btn btn-primary ml-2 sendTextBtn">Send Text</button></p>
+      <p><span class="userEmail">User3 </span><button class="btn btn-danger">Remove</button><button class="btn btn-primary ml-2 sendTextBtn">Send Text</button></p>
+      <p><span class="userEmail">User4 </span><button class="btn btn-danger">Remove</button><button class="btn btn-primary ml-2 sendTextBtn">Send Text</button></p>
+    </div>
+
+    <div class="col-md-6">
+      <form action="#" method="post" class="hide" id="msgForm">
+
+          <h5 class="text-left my-4">Send Text</h5>   
+          <div class="pack">
+              <!-- User Email Textbox -->
+            <input type="email" class="form-control mb-2" name="userMsgEmail" id="userMsgEmail" placeholder="User Email" value="Email / Phone number" required="required">
+            <input type="text" class="form-control" name="msg" placeholder="Enter Message" required="required">
+          </div>  
+    
+          <div class="pack">
+              <button type="submit" name="sendMsg" class="btn btn-primary btn-lg btn-block">Send Text</button>
+          </div>
+    
+    
+      </form>
+    </div>
+
+
+  </div>
 </div>
 </div>
 

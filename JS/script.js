@@ -1,6 +1,5 @@
-
- // Your List Navbar Button
- document.getElementById("yourListBtn").addEventListener("click",function(){
+    // Your List Navbar Button
+  document.getElementById("yourListBtn").addEventListener("click",function(){
     // Hide other items
     document.querySelectorAll(".hideCons").forEach(item=>{
       item.classList.add('hide');
@@ -44,5 +43,17 @@
       document.querySelectorAll(".nav-item").forEach(item=>{
         item.classList.remove('active');
       })
+    })
+  })
+
+  //Add event listener for send text buttons
+  document.querySelectorAll(".sendTextBtn").forEach(item=>{
+    item.addEventListener("click", function(){
+      //Display msg form
+      document.getElementById("msgForm").classList.remove("hide");
+
+      /*This code is crucial is the message is sent to email, for the project we choose to send it through phone */
+      /* var email = item.parentElement.querySelector(".userEmail");
+      document.getElementById("userMsgEmail").value=email.innerHTML; */
     })
   })

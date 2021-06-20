@@ -8,7 +8,6 @@ document.getElementById("signUpPageBtn").addEventListener("click",function(){
   });
 
 
-  
   document.getElementById("loginPageBtn").addEventListener("click",function(){
     // Hide other items
     document.querySelectorAll(".hideCons").forEach(item=>{
@@ -16,4 +15,4 @@ document.getElementById("signUpPageBtn").addEventListener("click",function(){
     })
     //Display only selected one
     document.getElementById("login").classList.remove("hide");
-});
+    });

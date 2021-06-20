@@ -1,177 +1,172 @@
 body {
 	color: #fff;
-	background: #F09819;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EDDE5D, #F09819);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EDDE5D, #F09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #e6d755, #f0991e); 
 }
 .form-control {
-	min-height: 41px;
-	background: #f2f2f2;
-	box-shadow: none !important;
+	min-height: 40px;
+	background: #e9e8e8;
+	box-shadow: none;
 	border: transparent;
 }
 .form-control:focus {
-	background: #e2e2e2;
+	background: #dbdada;
 }
 .form-control, .btn {        
-	border-radius: 2px;
+	border-radius: 3px;
 }
-.login-form {
-	width: 350px;
-	margin: 30px auto;
+.cone {
+	width: 340px;
+	margin: 29px auto;
 	text-align: center;
 }
-.login-form h2 {
+.cone h2 {
 	margin: 10px 0 25px;
 }
-.login-form form {
-	color: #7a7a7a;
-	border-radius: 3px;
-	margin-bottom: 15px;
-	background: #fff;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-	padding: 30px;
-    border-radius: 20px;
+.cone form {
+	color: #868686;
+	border-radius: 4px;
+	margin-bottom: 12px;
+	background: #ffff;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+	padding: 31px;
+    border-radius: 21px;
 }
-.login-form .btn {        
-	font-size: 16px;
+.cone .btn {        
+	font-size: 17px;
 	font-weight: bold;
-	background: #3598dc;
+	background: #389ee2;
 	border: none;
-	outline: none !important;
+	outline: none;
 }
-.login-form .btn:hover, .login-form .btn:focus {
-	background: #2389cd;
+.cone .btn:hover, .cone .btn:focus {
+	background: #116094;
 }
-.login-form a {
-	color: #fff;
+.cone a {
+	color: #ffff;
 	text-decoration: underline;
 }
-.login-form a:hover {
+.cone a:hover {
 	text-decoration: none;
 }
-.login-form form a {
-	color: #7a7a7a;
+.cone form a {
+	color: #696969;
 	text-decoration: none;
 }
-.login-form form a:hover {
+.cone form a:hover {
 	text-decoration: underline;
 }
-.signup-form {
+.enre {
 	width: 400px;
 	margin: 30px auto;
 }
-.signup-form form {
+.enre form {
 	color: #7a7a7a;
-	border-radius: 3px;
-	margin-bottom: 15px;
-	background: #fff;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-	padding: 30px;
-    border-radius: 20px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	background: #ffff;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+	padding: 31px;
+    border-radius: 21px;
 }
-.signup-form h2  {
-	/* color: #333; */
+.enre h2  {
+	
 	margin-top: 0;
 }
-.signup-form hr  {
-	margin: 0 -30px 20px;
+.enre hr  {
+	margin: 0 -31px 19px;
 }    
-.signup-form .form-group {
-	margin-bottom: 20px;
+.enre .pack {
+	margin-bottom: 21px;
 }
-.signup-form input[type="checkbox"] {
-	margin-top: 3px;
+.enre input[type="checkbox"] {
+	margin-top: 4px;
 }
-.signup-form .row div:first-child {
-	padding-right: 10px;
+.enre .row div:first-child {
+	padding-right: 11px;
 }
-.signup-form .row div:last-child {
-	padding-left: 10px;
+.enre .row div:last-child {
+	padding-left: 11px;
 }
-.signup-form .btn {        
+.enre .btn {        
 	font-size: 16px;
 	font-weight: bold;
-	background: #3598dc;
+	background: #3395d6;
 	border: none;
 	min-width: 140px;
 }
-.signup-form .btn:hover, .signup-form .btn:focus {
-	background: #2389cd !important;
+.enre .btn:hover, .enre .btn:focus {
+	background: #2796e0;
 	outline: none;
 }
-.signup-form a {
-	color: #fff;
+.enre a {
+	color: #ffff;
 	text-decoration: underline;
 }
-.signup-form a:hover {
+.enre a:hover {
 	text-decoration: none;
 }
-.signup-form form a {
+.enre form a {
 	color: #3598dc;
 	text-decoration: none;
 }	
-.signup-form form a:hover {
+.enre form a:hover {
 	text-decoration: underline;
 }
-.signup-form .hint-text  {
-	padding-bottom: 15px;
+.enre .hint-text  {
+	padding-bottom: 16px;
 	text-align: center;
 }
 
 .containerNav{
     background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    height: 80px;
+    border-radius: 21px;
+    height: 81px;
 }
 nav a{
     color: black;
 }
-.nav-item a{
-    font-size: 1.4em;
+.list a{
+    font-size: 1.5em;
 }
-.nav-item{
-    transition: 0.5s;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 8px 15px;
+.list{
+    transition: 0.6s;
+    margin-left: 11px;
+    margin-right: 11px;
+    padding: 9px 16px;
 }
-.nav-item.active, .nav-item:hover{
-    background-color: #F09819;
-    border-radius: 10px;
+.list.active, .list:hover{
+    background-color: #eb9216;
+    border-radius: 8px;
 }
-.nav-item.active a,.nav-item:hover a{
-    color: white !important;
+.list.active a,.list:hover a{
+    color: #ffffff;
 }
 .mainCon{
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    color: black;
-    padding: 20px 40px 5px;
-    min-height: 75vh;
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 19px;
+    color: rgb(0, 0, 0);
+    padding: 21px 41px 6px;
+    min-height: 74vh;
 }
 .mainCon2{
-    min-height: 60vh;
+    min-height: 61vh;
 }
 .listItem{
-    margin-bottom: 15px;
-    padding: 15px 5px;
-    /* border: 1px solid rgb(153, 152, 152); */
-    border-radius: 10px;
-    background: white;
+    margin-bottom: 16px;
+    padding: 16px 6px;
+    border-radius: 11px;
+    background: rgb(236, 236, 236);
 }
 .mainCon input, .mainCon textarea{
-    background-color: white;
+    background-color: rgb(240, 239, 239);
     
 }
 .bg-light{
-    background-color: transparent !important;
+    background-color: transparent ;
 }
 .hide{
 	display: none;
 }
-
-
 
 
 
@@ -186,9 +181,9 @@ nav a{
         background-color: black; */
     }
     .navbar-collapse{
-        background-color: rgba(255, 255, 255);
-        padding: 15px;
-        z-index: 10;
-        border-radius: 20px;
+        background-color: rgb(238, 235, 235);      
+        border-radius: 21px;
+		padding: 16px;
+		z-index: 11;
     }
 }

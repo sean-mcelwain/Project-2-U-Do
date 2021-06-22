@@ -1,0 +1,24 @@
+<!-- Loop over each object in the projects array -->
+{{#each lists as |list| }}
+<div class="row mb-4 list">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <a href="/list/{{list.id}}">{{list.name}}</a>
+    </h2>
+    <p>
+      <span for="img" aria-label="money">💲</span>
+      <!-- Pass needed_funding value to the helper function -->
+      <span class="dollar-amount">{{format_amount list.needed_funding}}</span>
+      needed!
+    </p>
+    <p>Created by {{list.user.name}} on {{format_date list.date_created}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{list.description}}
+    </p>
+  </div>
+</div>
+{{/each}}

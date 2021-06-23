@@ -2,6 +2,10 @@ body {
 	color: #fff;
     background: linear-gradient(to right, #e6d755, #f0991e); 
 }
+nav {
+	background: #e9e8e8;
+	text-align: right;
+}
 .form-control {
 	min-height: 40px;
 	background: #e9e8e8;

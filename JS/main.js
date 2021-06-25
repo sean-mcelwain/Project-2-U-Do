@@ -1,18 +1,19 @@
-document.getElementById("signUpPageBtn").addEventListener("click",function(){
-    // Hide other items
-    document.querySelectorAll(".hideCons").forEach(item=>{
-      item.classList.add('hide');
-    })
-    //Display only selected one
-    document.getElementById("signup").classList.remove("hide");
-  });
+function startfunction(){
+	//function which runs on body onload
 
+	document.getElementById('signupdiv').style.display = "none";
+}
 
-  document.getElementById("loginPageBtn").addEventListener("click",function(){
-    // Hide other items
-    document.querySelectorAll(".hideCons").forEach(item=>{
-      item.classList.add('hide');
-    })
-    //Display only selected one
-    document.getElementById("login").classList.remove("hide");
-    });
+function showlogin(){
+	
+	//this function shows the login div and hides the sign up div
+	document.getElementById('signupdiv').style.display = "none";
+	document.getElementById('logindiv').style.display = "block";
+	
+}
+
+function showsignup(){
+	document.getElementById('signupdiv').style.display = "block"; //display the sign up div
+	document.getElementById('logindiv').style.display = "none"; //hide login div
+	
+}

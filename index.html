@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>U-DO</title>
+  <link rel="shortcut icon" href="img/fav_icon.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!----------------------------------------------Bootstrap Links------------------------------------------>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!----------------------------------------------Css External Links------------------------------------------>
+  
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+</head>
+<body onload="startfunction()">
+
+
+<!------------------------------------------------------Sign Up From----------------------------------------------------------------------->
+
+<div class="FromArea">
+<div class="container">
+<div class="row">
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"><h1>U-DO</h1></div>
+	
+	
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+	
+	
+<!----------------------------------------From Start-------------------------------------->
+<div id="signupdiv">
+	<h3>Sign Up Here!</h3>
+
+		<form action="" method="POST">
+		
+		 <div class="row">
+		<div class="form-group col">
+		<input type="text" class="form-control" id="fname" placeholder="First Name" name="email">
+		</div>
+		<div class="form-group col">
+		<input type="text" class="form-control" placeholder="Last Name" name="lastname">
+		</div>
+		</div>
+		
+		
+		 <div class="row">
+		<div class="form-group col">
+		<input type="email" class="form-control" id="email" placeholder="Email" name="email">
+		</div>
+		</div>
+		
+		
+		 <div class="row">
+		<div class="form-group col">
+		<input type="password" class="form-control" id="password" placeholder="Password" name="password">
+		</div>
+		</div>
+		
+		 <div class="row">
+		<div class="form-group col">
+		<input type="password" class="form-control" id="cpassword" placeholder="Confirm Password" name="cpassword">
+		</div>
+		</div>
+		
+		
+		
+		 <div class="row">
+		<div class="form-group col">
+		<div class="form-check">
+		<label class="form-check-label">
+		<input class="form-check-input" type="checkbox"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a>
+		</label>
+		</div>
+		</div>
+		</div>
+		
+		
+		
+		<div class="row">
+		<div class="form-group col">
+		<button type="submit" class="btn btn-primary" name="Signup">Sign Up Now</button>
+		</div>
+		</div>
+		
+		<div class="row SimpleText"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Already have an account?  <a href="#" onclick="showlogin()"> Login here</a></div></div>
+		
+		
+		</form>
+		</div>
+		
+		<!---------------------------------------------Login From---------------------------------------------->
+		
+		<div id="logindiv">
+	<h3>Login Here!</h3>
+			<form action="" method="POST">
+		
+		 <div class="row">
+		<div class="form-group col">
+		<input type="email" class="form-control" id="email" placeholder="Email" name="email">
+		</div>
+		</div>
+		
+		
+		 <div class="row">
+		<div class="form-group col">
+		<input type="password" class="form-control" id="password" placeholder="Password" name="password">
+		</div>
+		</div>
+	
+		
+		
+		<div class="row">
+		<div class="form-group col">
+		<button type="submit" class="btn btn-primary" name="Signup">Sign In Now</button>
+		</div>
+		</div>
+		
+		<div class="row SimpleText">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Don't have an account? <a href="#" onclick="showsignup()">Sign up here!</a></div>
+		</div>
+		
+		
+		</form>
+		</div>
+		
+		<!--------------------------------------------------------Login Form End--------------------------------------------------------->
+		
+
+	</div>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"></div>
+   
+	</div>
+	</div>
+	</div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

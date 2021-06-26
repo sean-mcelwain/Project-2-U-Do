@@ -1,6 +1,5 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
-console.log(123)
 
   const name = document.querySelector('#list-name').value.trim();
   const description = document.querySelector('#list-desc').value.trim();
@@ -32,16 +31,16 @@ const delButtonHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace('/');
     } else {
       alert('Failed to delete list');
     }
   }
 };
 
-document
-.querySelector('.new-list-form')
-  .addEventListener('submit', newFormHandler);
+// document
+// .querySelector('.new-list-form')
+//   .addEventListener('submit', newFormHandler);
 
 document
   .querySelector('.list-list')

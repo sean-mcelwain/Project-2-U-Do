@@ -23,8 +23,9 @@
     </form>
   </div>
 
+ <div class="col-md-6 list-list">
   {{#if lists.length}}
-  <div class="col-md-6 list-list">
+ 
     <h3>Current lists:</h3>
 
     {{#each lists as |list|}}
@@ -37,8 +38,9 @@
       </div>
     </div>
     {{/each}}
-  </div>
+    
   {{/if}}
+  </div>
 </div>
 
 <script src="./js/list.js"></script>

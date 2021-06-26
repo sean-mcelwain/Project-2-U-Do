@@ -1,23 +1,4 @@
 
-{{#if lists.length}}
-  <div class="col-md-6 list-list">
-    <h3>Current lists:</h3>
-
-    {{#each lists as |list|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/list/{{list.id}}">{{list.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{list.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}}
-
-
-
 <!-- Navbar -->
 <div class="container containerNav mt-4">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -40,21 +21,23 @@
     </div>
     </nav>
 </div>
-<!-- Lists Container -->
-<div class="container mainCon mt-5 hideCons" id="yourList">
+    
+{{#if lists.length}}
+  <div class="col-md-12 list-list">
+  <div class="container mainCon mt-5 hideCons" id="yourList">
+    {{#each lists as |list|}}
 
     <div class="row listItem">
-        <div class="col-8">List - 1</div> <!--List Name-->
-        <div class="col-4 text-right"><button class="viewBtn btn btn-success">View</button></div>
+        <div class="col-8"><h4><a href="/list/{{list.id}}">{{list.name}}</a></h4></div> <!--List Name-->
+        <div class="col-4 text-right"><a href="/list/{{list.id}}" class="viewBtn btn btn-success">View</a>
+        <button class="btn btn-danger" data-id="{{list.id}}">DELETE</button>        
+        </div>
     </div>
 
-    <div class="row listItem">
-        <div class="col-8">List - 2</div> <!--List Name-->
-        <div class="col-4 text-right"><button class="viewBtn btn btn-success">View</button></div>
-    </div>
 
-    <div class="row listItem">
-        <div class="col-8">List - 3</div> <!--List Name-->
-        <div class="col-4 text-right"><button class="viewBtn btn btn-success">View</button></div>
-    </div>
-</div>
+    {{/each}}
+  </div>
+  </div>
+  {{/if}}
+
+<script src="./js/homepage.js"></script>

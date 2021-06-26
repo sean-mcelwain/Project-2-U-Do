@@ -2,6 +2,21 @@ body {
 	color: #fff;
     background: linear-gradient(to right, #e6d755, #f0991e); 
 }
+nav {
+	background: #e9e8e8;
+	text-align: right;
+}
+
+.no-button {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	color: #1b89bc;
+	text-decoration: none;
+	font-size: 100%;
+  }
+
 .form-control {
 	min-height: 40px;
 	background: #e9e8e8;
@@ -119,10 +134,16 @@ body {
 	text-align: center;
 }
 
+
+.navbar {
+  border-radius: 20px;
+}
 .containerNav{
     background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 21px;
-    height: 81px;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 nav a{
     color: black;

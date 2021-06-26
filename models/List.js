@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class List extends Model {}
+class Project extends Model {}
 
-List.init(
+Project.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -23,6 +23,10 @@ List.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
+    needed_funding: {
+      type: DataTypes.FLOAT,
+      allowNull: false,
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -30,14 +34,24 @@ List.init(
         key: 'id',
       },
     },
+    assigned_user_phone: {
+      type: Sequelize.STRING,
+      allowNull: true,
+      get() {
+          return this.getDataValue('assigned_user_phone').split(';')
+      },
+      set(val) {
+         this.setDataValue('assigned_user_phone',val.join(';'));
+      }
+  },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'list',
+    modelName: 'project',
   }
 );
 
-module.exports = List;
+module.exports = Project;

@@ -19,14 +19,12 @@
 <body>
     <header>
 
-      <nav class="form-control">
+      {{#if logged_in}} <nav class="form-control">
         <!-- Conditionally render login or logout links -->
-        {{#if logged_in}} Welcome {{User.name}}| 
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
+        <p class="text-right"> Welcome {{user.name}} | <a href="/">Home</a> | 
+        <button class="no-button" id="logout">Logout</button></p>
       </nav>
+      {{/if}}      
       <div class="container">
       <div class="row mt-5">
         <div class="col-12 text-center">
@@ -48,6 +46,8 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
+
+
 </body>
 
 </html>

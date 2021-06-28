@@ -1,0 +1,120 @@
+body {  
+	background-image: linear-gradient(to right, #E7D250 , #F09B1F); /*------Body Color in Gradient-------*/
+}
+
+.no-button {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	color: #1b89bc;
+	text-decoration: none;
+	font-size: 100%;
+  }
+
+body {
+	color: #fff;
+    background: linear-gradient(to right, #e6d755, #f0991e); 
+}
+.form-control {
+	min-height: 40px;
+	background: #e9e8e8;
+	box-shadow: none;
+	border: transparent;
+}
+.form-control:focus {
+	background: #dbdada;
+}
+.form-control, .btn {        
+	border-radius: 3px;
+}
+.cone {
+	width: 340px;
+	margin: 29px auto;
+	text-align: center;
+}
+.cone h2 {
+	margin: 10px 0 25px;
+}
+.cone .pack {
+	color: #868686;
+	border-radius: 4px;
+	margin-bottom: 12px;
+	background: #ffff;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 21px;
+}
+.cone .btn {        
+	font-size: 17px;
+	font-weight: bold;
+	background: #389ee2;
+	border: none;
+	outline: none;
+}
+.cone .btn:hover, .cone .btn:focus {
+	background: #116094;
+}
+.cone a {
+	color: #ffff;
+	text-decoration: underline;
+}
+.cone a:hover {
+	text-decoration: none;
+}
+.cone .pack a {
+	color: #696969;
+	text-decoration: none;
+}
+.cone .pack a:hover {
+	text-decoration: underline;
+}
+
+
+.containerNav{
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 21px;
+
+}
+nav a{
+    color: black;
+}
+.list a{
+    font-size: 1.5em;
+}
+.list{
+    transition: 0.6s;
+    margin-left: 11px;
+    margin-right: 11px;
+    padding: 9px 16px;
+}
+.list.active, .list:hover{
+    background-color: #eb9216;
+    border-radius: 8px;
+}
+.list.active a,.list:hover a{
+    color: #ffffff;
+}
+.mainCon{
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 19px;
+    color: rgb(0, 0, 0);
+    padding: 21px 41px 6px;
+    min-height: 50vh;
+}
+
+.listItem{
+    margin-bottom: 16px;
+    padding: 16px 6px;
+    border-radius: 11px;
+    background: rgb(236, 236, 236);
+}
+.mainCon input, .mainCon textarea{
+    background-color: rgb(240, 239, 239);
+    
+}
+.bg-light{
+    background-color: transparent ;
+}
+.hide{
+	display: none;
+}

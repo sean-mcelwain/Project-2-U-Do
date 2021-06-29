@@ -45,3 +45,7 @@ GitHub Profile: https://github.com/sean-mcelwain.
 Email: sean.mcelwain.KUBootcamp@gmail.com.  
  
 For any question regarding this project, my preferred method of communication is via email. 
+
+<a name='screenshot'></a>
+ ## Screenshot 
+![Screenshot](https://raw.githubusercontent.com/sean-mcelwain/Project-2-U-Do/main/screenshot.jpg)

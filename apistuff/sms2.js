@@ -4,9 +4,10 @@ var body = { messages: [
   {
     to: [
       "+19137446456",
-      "+16198470281"
+      "+19132267603",
+      "+19132218549"
     ],
-    content: "To-do list app reminder",
+    content: "To-do list app reminder. HAVE A GREAT DAY!",
     from: "D7sms"
   }]};
 

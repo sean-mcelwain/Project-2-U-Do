@@ -4,6 +4,7 @@ const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
   try {
+
     const newList = await List.create({
       ...req.body,
       user_id: req.session.user_id,
@@ -34,5 +35,29 @@ router.delete('/:id', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+// Updates book based on its book_id
+router.put('/:id', async (req, res) => {
+
+  const updateList = await List.update(
+    {
+      name: req.body.name,
+      description: req.body.description
+    },
+    {
+      where: {
+        id: req.params.id,
+      },
+    }
+  )
+    .then((updatedList) => {
+      res.json(updatedList);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.json(err);
+    });
+});
+
 
 module.exports = router;

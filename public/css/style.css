@@ -1,3 +1,17 @@
+body {  
+	background-image: linear-gradient(to right, #E7D250 , #F09B1F); /*------Body Color in Gradient-------*/
+}
+
+.no-button {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	color: #1b89bc;
+	text-decoration: none;
+	font-size: 100%;
+  }
+
 body {
 	color: #fff;
     background: linear-gradient(to right, #e6d755, #f0991e); 
@@ -54,75 +68,12 @@ body {
 .cone .pack a:hover {
 	text-decoration: underline;
 }
-.enre {
-	width: 400px;
-	margin: 30px auto;
-}
-.enre .pack {
-	color: #7a7a7a;
-	border-radius: 4px;
-	margin-bottom: 16px;
-	background: transparent;
-	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-	padding: 5px;
-    border-radius: 4px;
-}
-.enre h2  {
-	
-	margin-top: 0;
-}
-.enre hr  {
-	margin: 0 -31px 19px;
-}    
-.enre .pack {
-	margin-bottom: 21px;
-}
-.enre input[type="checkbox"] {
-	margin-top: 4px;
-}
-.enre .row div:first-child {
-	padding-right: 9px;
-}
-.enre .row div:last-child {
-	padding-left: 9px;
-}
-.enre .btn {        
-	font-size: 16px;
-	font-weight: bold;
-	background: #3395d6;
-	border: none;
-	min-width: 140px;
 
-	
-	
-}
-.enre .btn:hover, .enre .btn:focus {
-	background: #2796e0;
-	outline: none;
-}
-.enre a {
-	color: #ffff;
-	text-decoration: underline;
-}
-.enre a:hover {
-	text-decoration: none;
-}
-.enre .pack a {
-	color: #3598dc;
-	text-decoration: none;
-}	
-.enre .pack a:hover {
-	text-decoration: underline;
-}
-.enre .hint-text  {
-	padding-bottom: 16px;
-	text-align: center;
-}
 
 .containerNav{
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 21px;
-    height: 81px;
+
 }
 nav a{
     color: black;
@@ -148,11 +99,9 @@ nav a{
     border-radius: 19px;
     color: rgb(0, 0, 0);
     padding: 21px 41px 6px;
-    min-height: 74vh;
+    min-height: 50vh;
 }
-.mainCon2{
-    min-height: 61vh;
-}
+
 .listItem{
     margin-bottom: 16px;
     padding: 16px 6px;
@@ -168,24 +117,4 @@ nav a{
 }
 .hide{
 	display: none;
-}
-
-
-
-@media (max-width:769px){
-    .containerNav{
-        background-color: transparent;
-        border-radius: 20px;
-        height: 80px;
-    }
-    .navbar-toggler{
-        /* color: black;
-        background-color: black; */
-    }
-    .navbar-collapse{
-        background-color: rgb(238, 235, 235);      
-        border-radius: 21px;
-		padding: 16px;
-		z-index: 11;
-    }
 }

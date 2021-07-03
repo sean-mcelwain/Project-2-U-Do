@@ -33,6 +33,13 @@
       <div class="pack">
           <!-- List box -->
         <textarea type="text" class="form-control" id="list-desc" name="list" rows="11" placeholder="U-DO List" required="required">{{description}}</textarea>
+      </div>
+
+      <div class="pack">
+          <!-- Task box -->
+        {{#each tasks}}
+        {{>task}}
+        {{/each}}
       </div>   
 
           <!-- Save button box -->

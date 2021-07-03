@@ -31,9 +31,11 @@ router.get('/list/:id', async (req, res) => {
           model: User,
           attributes: ['name'],
         },
+        Task
       ],
     });
     const list = listData.get({ plain: true });
+    console.log(list)
     res.render('list', {
       ...list,
       logged_in: req.session.logged_in

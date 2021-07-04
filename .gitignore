@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 gitignore
-node_modules
-node_modules
-node_modules
-=======
 node_modules
 .env
 .DS_Store
->>>>>>> f350c693601f1b1463027b7b19f38551e0258406

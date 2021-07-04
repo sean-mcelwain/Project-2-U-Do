@@ -3,8 +3,6 @@ const { Task } = require('../../models');
 const withAuth = require('../../utils/auth');
 
  router.post('/', withAuth, async (req, res) => {
-     console.log("cats")
-console.log(req.body)
 const taskDesc = req.body.task
 const listId = req.body.listId
 

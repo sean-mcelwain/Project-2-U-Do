@@ -53,7 +53,8 @@
       document.getElementById("msgForm").classList.remove("hide");
 
       /*This code is crucial is the message is sent to email, for the project we choose to send it through phone */
-      /* var email = item.parentElement.querySelector(".userEmail");
-      document.getElementById("userMsgEmail").value=email.innerHTML; */
+      var email = item.parentElement.querySelector(".userEmail");
+      document.getElementById("userMsgEmail").value=email.innerHTML;
+      var phone = 
     })
   })

@@ -1,5 +1,6 @@
 <div>
-    <h1> {{description}} </h1>
+    {{!-- <h1> {{description}} </h1> --}}
+    <textarea class="form-control" name="taskDescription">{{description}}</textarea>
      {{#if completed}}<h5>task completed</h5>
      {{else}} <h5>task NOT completed</h5>
      {{/if}}

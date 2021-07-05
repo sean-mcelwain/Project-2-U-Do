@@ -22,6 +22,15 @@ const addTask = async (event) => {
     }
   }
 };
+const toggleComplete = async(event) => {
+console.log(event.target)
+}
+const toggleProgress = async(event) => {
+    console.log(event.target)
+}
+const updateTask = async(event) => {
+    console.log(event.target)
+}
 
 document
   .getElementById("new-taskbtn")
@@ -31,24 +40,18 @@ document
   .querySelectorAll('.toggle-complete')
 
   completeBtns.forEach(completeBtn => {
-      completeBtn.addEventListener('click',() => {
-        console.log("complete btn clicked")
-    }); 
+      completeBtn.addEventListener('click', toggleComplete); 
   })
   const progressBtns = document
   .querySelectorAll('.toggle-progress')
 
   progressBtns.forEach(progressBtn => {
-    progressBtn.addEventListener('click',() => {
-      console.log("progress btn clicked")
+    progressBtn.addEventListener('click', toggleProgress);
   }); 
-})
 const updateBtns = document
   .querySelectorAll('.update-task-btn')
 
 updateBtns.forEach(updateBtn => {
-    updateBtn.addEventListener('click',() => {
-      console.log("update btn clicked")
+    updateBtn.addEventListener('click', updateTask);
   }); 
-})
     

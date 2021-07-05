@@ -23,7 +23,19 @@ const addTask = async (event) => {
   }
 };
 const toggleComplete = async(event) => {
-console.log(event.target)
+const taskID = event.target.getAttribute('data-task_id')
+const response = await fetch(`/api/tasks/togcom/${taskID}`, {
+    method: 'PUT',
+    // body: JSON.stringify({ name, description }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+})
+if (response.ok) {
+    document.location.reload();
+  } else {
+    alert("Failed to update task");
+  }
 }
 const toggleProgress = async(event) => {
     console.log(event.target)

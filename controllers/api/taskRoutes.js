@@ -17,6 +17,28 @@ description: taskDesc,
     }
   });
 
+  router.put('/togcom/:taskId', withAuth, async (req, res) => {
+    console.log(req.params.taskId)
+    const taskId = req.params.taskId 
+const task = await Task.findByPk(taskId)
+const completedStatus = task.completed
+          const taskcomptog = await Task.update({
+            completed: !completedStatus
+          },
+          {
+              where: {
+                  id: taskId
+              }
+        }).then((updatedTask) => {
+            res.status(200).json(updatedTask);
+        })
+        .catch((err) => {
+            console.log(err);
+            res.status(400).json(err);
+          }); 
+    
+      });
+
 
 
 

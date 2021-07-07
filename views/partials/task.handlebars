@@ -8,7 +8,12 @@
 {{#if in_progress}}<h5>task in progress</h5>
      {{else}} <h5>task not in progress</h5>
      {{/if}}
-     <button data-task_id="{{id}}"class= "toggle-complete" type="button">Marked as complete</button>
+
+     {{#if completed}}
+     <button data-task_id="{{id}}"class= "toggle-complete" type="button">Mark as incomplete</button>
+     {{else}}
+<button data-task_id="{{id}}"class= "toggle-complete" type="button">Mark as complete</button>
+{{/if}}
      <button data-task_id="{{id}}"class= "toggle-progress" type="button">Marked as in progress</button>
      <button data-task_id="{{id}}"class= "update-task-btn" type="button">Update task</button>
 </div>

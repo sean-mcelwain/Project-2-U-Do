@@ -34,11 +34,23 @@ const response = await fetch(`/api/tasks/togcom/${taskID}`, {
 if (response.ok) {
     document.location.reload();
   } else {
-    alert("Failed to update task");
+    alert("Failed to update");
   }
 }
 const toggleProgress = async(event) => {
-    console.log(event.target)
+    const taskID = event.target.getAttribute('data-task_id')
+const response = await fetch(`/api/tasks/progcom/${taskID}`, {
+    method: 'PUT',
+    // body: JSON.stringify({ name, description }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+})
+if (response.ok) {
+    document.location.reload();
+  } else {
+    alert("Failed to update");
+  }
 }
 const updateTask = async(event) => {
     console.log(event.target)

@@ -38,7 +38,27 @@ const completedStatus = task.completed
           }); 
     
       });
-
+      router.put('/progcom/:taskId', withAuth, async (req, res) => {
+        console.log(req.params.taskId)
+        const taskId = req.params.taskId 
+    const task = await Task.findByPk(taskId)
+    const progressStatus = task.in_progress
+              const taskcomptog = await Task.update({
+                in_progress: !progressStatus
+              },
+              {
+                  where: {
+                      id: taskId
+                  }
+            }).then((updatedTask) => {
+                res.status(200).json(updatedTask);
+            })
+            .catch((err) => {
+                console.log(err);
+                res.status(400).json(err);
+              }); 
+        
+          });
 
 
 

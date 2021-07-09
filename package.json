@@ -12,6 +12,7 @@
     "mysql2": "^2.2.5",
     "node": "^16.4.0",
     "path": "^0.12.7",
+    "request": "^2.88.2",
     "seed": "^0.4.4",
     "sequelize": "^6.6.4",
     "serve-favicon": "^2.5.0"

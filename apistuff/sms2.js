@@ -4,8 +4,8 @@ var body = { messages: [
   {
     to: [
       "+19137446456",
-      "+19132267603",
-      "+19132218549"
+      "+17865645859"
+      
     ],
     content: "To-do list app reminder. HAVE A GREAT DAY!",
     from: "D7sms"
@@ -21,9 +21,14 @@ var options = {
 body:JSON.stringify(body)
 
 };
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
 
 console.log(options);
+
+module.exports = function sendText(){
+  request(options, function (error, response) {
+    if (error) throw new Error(error);
+    console.log(response.body);
+  });
+
+}
+

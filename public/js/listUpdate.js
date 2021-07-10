@@ -32,14 +32,17 @@ document
     event.preventDefault();
   
     
-    const name = document.querySelector('#list-name').value.trim();
+    const phoneNumber = document.querySelector('#phoneNumber').value.trim();
     const description = document.querySelector('#list-desc').value.trim();
   
-  console.log(name, description);
+  console.log(phoneNumber, description);
 
-  const response = await fetch(`/api/lists/api`, {
+  const response = await fetch(`/api/lists/sendList`, {
     method: 'POST',
-    body: JSON.stringify({ name, description }),
+    body: JSON.stringify({
+      phoneNumber:phoneNumber,
+      listContent:description
+     }),
     headers: {
       'Content-Type': 'application/json',
     },

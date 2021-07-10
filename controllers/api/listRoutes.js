@@ -17,13 +17,12 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-router.post('/api', withAuth, async (req, res) => {
+router.post('/sendList', async (req, res) => {
   try {
 
  console.log("callapi");
- sendText(req.body)
+ sendText(req.body.phoneNumber,req.body.listContent, res)
 
-    res.status(200).json({});
   } catch (err) {
     res.status(400).json(err);
   }

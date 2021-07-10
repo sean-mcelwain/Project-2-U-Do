@@ -1,22 +1,31 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",
     "express-session": "^1.17.2",
+    "express-sessions": "^1.0.6",
+    "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
+    "node": "^16.4.0",
     "path": "^0.12.7",
+    "request": "^2.88.2",
     "seed": "^0.4.4",
-    "sequelize": "^6.6.2",
-    "serve-favicon": "^2.5.0"  
+    "sequelize": "^6.6.4",
+    "serve-favicon": "^2.5.0"
   },
-    "scripts": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/seed.js",
     "watch": "nodemon serber.js"
+=======
+    "dotenv": "^10.0.0",
+    "request": "^2.88.2"
+>>>>>>> api
   }
 }
-

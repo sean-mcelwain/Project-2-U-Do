@@ -1,6 +1,8 @@
 const updateFormHandler = async (event) => {
   event.preventDefault();
 
+  console.log("triggerfunction");
+
   const name = document.querySelector('#list-name').value.trim();
   const description = document.querySelector('#list-desc').value.trim();
   const id = document.querySelector('.updateBtn').getAttribute('data-id');
@@ -23,5 +25,31 @@ const updateFormHandler = async (event) => {
 };
 
 document
-.querySelector('.update-list-form')
+.querySelector('.todolistcont')
   .addEventListener('submit', updateFormHandler);
+
+  const smsHandler = async (event) => {
+    event.preventDefault();
+  
+    
+    const name = document.querySelector('#list-name').value.trim();
+    const description = document.querySelector('#list-desc').value.trim();
+  
+  console.log(name, description);
+
+  const response = await fetch(`/api/lists/api`, {
+    method: 'POST',
+    body: JSON.stringify({ name, description }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  };
+
+  
+document
+.querySelector('.smsapi')
+  .addEventListener('submit', smsHandler);
+
+
+

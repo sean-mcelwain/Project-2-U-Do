@@ -1,6 +1,6 @@
 <div>
-    {{!-- <h1> {{description}} </h1> --}}
-    <textarea class="form-control" data-task_id="{{id}}"name="taskDescription">{{description}}</textarea>
+{{!-- <h1> {{description}} </h1> --}}
+<textarea class="form-control" data-task_id="{{id}}"name="taskDescription">{{description}}</textarea>
      {{#if completed}}<h5>Task completed</h5>
      {{else}} <h5>Task NOT completed</h5>
      {{/if}}
@@ -17,7 +17,7 @@
 
 {{#if in_progress}}
      <button data-task_id="{{id}}"class= "toggle-progress" type="button">Task NOT in progress</button>
-    
+
      {{else}}
 <button data-task_id="{{id}}"class= "toggle-progress" type="button">Task in progress</button>
 

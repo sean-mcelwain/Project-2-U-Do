@@ -2,11 +2,11 @@ const router = require('express').Router();
 const { Task } = require('../../models');
 const withAuth = require('../../utils/auth');
 
- router.post('/', withAuth, async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
 const taskDesc = req.body.task
 const listId = req.body.listId
 
-     try {
+    try {
       const newTask = await Task.create({
 description: taskDesc,
         list_id: listId

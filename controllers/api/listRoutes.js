@@ -3,6 +3,9 @@ const { List } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
+  
+  
+  
   try {
 
     const newList = await List.create({

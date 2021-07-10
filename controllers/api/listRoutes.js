@@ -21,7 +21,7 @@ router.post('/api', withAuth, async (req, res) => {
   try {
 
  console.log("callapi");
- sendText()
+ sendText(req.body)
 
     res.status(200).json({});
   } catch (err) {

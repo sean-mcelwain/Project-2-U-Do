@@ -21,7 +21,6 @@ const updateFormHandler = async (event) => {
     }
   }
 };
- 
 
 document
 .querySelector('#update-list-form')

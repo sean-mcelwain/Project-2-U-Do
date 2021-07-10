@@ -1,10 +1,19 @@
 require("dotenv").config()
+<<<<<<< HEAD
 const { select } = require("async");
+=======
+>>>>>>> api
 var request = require('request');
 var body = { messages: [
   {
     to: [
+<<<<<<< HEAD
       '+19137446456',
+=======
+      "+19137446456",
+      "+19132267603",
+      "+19132218549"
+>>>>>>> api
     ],
     content: "To-do list app reminder. HAVE A GREAT DAY!",
     from: "D7sms"
@@ -12,7 +21,11 @@ var body = { messages: [
 
 var options = {
   'method': 'POST',
+<<<<<<< HEAD
   'url': 'https://rest-api.d7networks.com/secure/send',
+=======
+  'url': 'https://rest-api.d7networks.com/secure/sendbatch',
+>>>>>>> api
   'headers': {
     'Content-Type': 'application/x-www-form-urlencoded',
     'Authorization': `Basic ${process.env.D7_KEY}`
@@ -20,6 +33,7 @@ var options = {
 body:JSON.stringify(body)
 
 };
+<<<<<<< HEAD
 
 var api = 'https://rest-api.d7networks.com/secure/send'
 var smsText = 'body'
@@ -44,3 +58,11 @@ module.exports = function sendText(body){
 
 }
 
+=======
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
+});
+
+console.log(options);
+>>>>>>> api

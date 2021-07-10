@@ -1,5 +1,6 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "connect-session-sequelize": "^7.1.1",
@@ -22,5 +23,9 @@
     "start": "node server.js",
     "seed": "node seeds/seed.js",
     "watch": "nodemon serber.js"
+=======
+    "dotenv": "^10.0.0",
+    "request": "^2.88.2"
+>>>>>>> api
   }
 }

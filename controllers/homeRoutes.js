@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { List, User } = require('../models');
+const { List, User, Task } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -7,9 +7,12 @@ router.get('/', withAuth, async (req, res) => {
     const listData = await List.findAll({
       where: {
         user_id: req.session.user_id
-      }
+      },
+      include:[Task]
+
         });
     const lists = listData.map((list) => list.get({ plain: true }));
+    console.log(lists)
     res.render('homepage', {
       lists,
       // users,
@@ -28,9 +31,11 @@ router.get('/list/:id', async (req, res) => {
           model: User,
           attributes: ['name'],
         },
+        Task
       ],
     });
     const list = listData.get({ plain: true });
+    console.log(list)
     res.render('list', {
       ...list,
       logged_in: req.session.logged_in

@@ -23,5 +23,5 @@ const updateFormHandler = async (event) => {
 };
 
 document
-.querySelector('.update-list-form')
+.querySelector('#update-list-form')
   .addEventListener('submit', updateFormHandler);

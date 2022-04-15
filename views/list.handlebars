@@ -20,10 +20,10 @@
     </nav>
 </div>
 
-<div class="container mainCon mt-5 update-list-form" id="newList">
+<div class="container mainCon mt-5" id="newList">
 
 
-  <form action="#" method="post">
+  <form id="update-list-form"action="#" method="post">
       <h2 class="text-left my-4">Update list</h2>   
       <div class="pack">
           <!-- Title box -->
@@ -33,6 +33,20 @@
       <div class="pack">
           <!-- List box -->
         <textarea type="text" class="form-control" id="list-desc" name="list" rows="11" placeholder="U-DO List" required="required">{{description}}</textarea>
+      </div>
+
+      <div>
+        <h3>Add a task</h3>
+        <input type="text" id="new-task" class="form-control" placeholder="New Task">
+        <button class="btn btn-success btn-lg btn-block" id="new-taskbtn">Add</button><br>
+
+      </div>
+
+      <div class="pack">
+          <!-- Task box -->
+        {{#each tasks}}
+        {{>task}}
+        {{/each}}
       </div>   
 
           <!-- Save button box -->
@@ -46,3 +60,4 @@
 <br>
   <div><center>Created by {{user.name}} on {{format_date date_created}}</center></div><br>
 <script src="../js/listUpdate.js"></script>
+<script src="../js/taskLogic.js"></script>

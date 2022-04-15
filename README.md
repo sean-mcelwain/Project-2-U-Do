@@ -4,7 +4,6 @@
 This app is designed as a to-do list manager.  This app allows for multiple users to share a to-do list, and it has reminders to complete tasks.  
 
 ## Heroku Link
-URL: https://u-do.herokuapp.com/
 
 ## Table of Contents  
  1. [ Description. ](#description) 

@@ -1,0 +1,26 @@
+<div>
+{{!-- <h1> {{description}} </h1> --}}
+<textarea class="form-control" data-task_id="{{id}}"name="taskDescription">{{description}}</textarea>
+     {{#if completed}}<h5>Task completed</h5>
+     {{else}} <h5>Task NOT completed</h5>
+     {{/if}}
+
+{{#if in_progress}}<h5>Task in progress</h5>
+     {{else}} <h5>Task  NOT in progress</h5>
+     {{/if}}
+
+     {{#if completed}}
+     <button data-task_id="{{id}}"class= "toggle-complete" type="button">Task  incomplete</button>
+     {{else}}
+<button data-task_id="{{id}}"class= "toggle-complete" type="button">Complete Task</button>
+{{/if}}
+
+{{#if in_progress}}
+     <button data-task_id="{{id}}"class= "toggle-progress" type="button">Task NOT in progress</button>
+
+     {{else}}
+<button data-task_id="{{id}}"class= "toggle-progress" type="button">Task in progress</button>
+
+{{/if}}
+     <button data-task_id="{{id}}"class= "update-task-btn" type="button">Update task</button>
+</div>
